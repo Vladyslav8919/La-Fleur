@@ -1,5 +1,6 @@
 # 'La Fleur'
-is a Flower eCommerce store created with React.
+is a Flower eCommerce store built with React
+
 
 ### Implemented features:
 
