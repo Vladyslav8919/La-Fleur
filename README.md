@@ -1,4 +1,4 @@
-# 'La Fleur'
+# ['La Fleur']([https://www.example.com](https://la-fleur.netlify.app/))
 is a Flower eCommerce store built with React
 
 
@@ -14,7 +14,7 @@ is a Flower eCommerce store built with React
 - filtering;
 - routing;
 
-## Also used:
+### Also used:
 
 - styled-components
 - React Icons
