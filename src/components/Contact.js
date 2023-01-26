@@ -8,9 +8,9 @@ const Contact = () => {
         <h3>Join our newsletter and get 20% off</h3>
         <div className="content">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Consequuntur, repellendus. Pariatur deleniti delectus assumenda enim
-            harum error illum omnis consequuntur?
+            We'd love to hear from you. Please send us an email at
+            contact@lafleur.com. Join to get special offers, free giveaways, and
+            once-in-a-lifetime deals.
           </p>
           <form
             className="contact-form"
@@ -67,15 +67,17 @@ const Wrapper = styled.section`
   }
   .form-input::placeholder {
     color: var(--clr-black);
+    font-family: 'Hind';
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: var(--clr-primary-7);
     text-transform: capitalize;
-    letter-spacing: var(--spacing);
+    letter-spacing: 1.15px;
     cursor: pointer;
+    font-family: 'Hind'
     transition: var(--transition);
-    color: var(--clr-black);
+    color: var(--clr-primary-1);
   }
   .submit-btn:hover {
     color: var(--clr-white);

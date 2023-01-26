@@ -8,13 +8,14 @@ const Services = () => {
       <div className="section-center">
         <article className="header">
           <h3>
-            custom furniture <br />
-            built only for you
+            SAY IT
+            <br />
+            WITH ROSES
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            tempore enim deserunt. Nihil excepturi corporis illum sit, dolorum
-            esse debitis.
+            Gifts from the heart are our specialty. We invite you to explore our
+            Valentine's collection of exclusive arrangements that are sure to
+            send a big message.
           </p>
         </article>
         <div className="services-center">

@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import heroBcg from '../assets/hero-bcg.jpeg';
-import heroBcg2 from '../assets/hero-bcg-2.jpeg';
+import heroBcg from '../assets/hero-bcg.jpg';
+import heroBcg2 from '../assets/hero-bcg-2.jpg';
 
 const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
         <h1>
-          Design your <br />
-          comfort zone
+          A time for <br /> Everlasting love
         </h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint
-          ex quo maxime quia distinctio cum cumque nisi laborum recusandae.
+          Exquisite gifts selected for those who matter the most. Put your love
+          on display with the most whimsicle arrangements.
         </p>
         <Link to="/products" className="btn hero-btn">
           Shop now
@@ -43,6 +42,7 @@ const Wrapper = styled.section`
     color: var(--clr-grey-5);
     font-size: 1rem;
   }
+
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     grid-template-columns: 1fr 1fr;

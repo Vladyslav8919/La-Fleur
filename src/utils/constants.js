@@ -1,5 +1,9 @@
-import React from 'react'
-import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
+import React from 'react';
+import {
+  AiOutlineGift,
+  AiOutlineClockCircle,
+  AiOutlineHeart,
+} from 'react-icons/ai';
 export const links = [
   {
     id: 1,
@@ -16,32 +20,29 @@ export const links = [
     text: 'products',
     url: '/products',
   },
-]
+];
 
 export const services = [
   {
     id: 1,
-    icon: <GiCompass />,
-    title: 'mission',
-    text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    icon: <AiOutlineGift />,
+    title: 'ENCHANTING GIFTS',
+    text: 'Put your love on display with the most whimsicle arrangements, along with the most elite floral experience featuring our Lifetime Flowers.',
   },
   {
     id: 2,
-    icon: <GiDiamondHard />,
-    title: 'vision',
-    text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    icon: <AiOutlineClockCircle />,
+    title: 'THE LIFETIME FLOWERS',
+    text: 'Our unique preservation process ensures your bouquet will keep the look and feel of fresh flowers month after month. ',
   },
   {
     id: 3,
-    icon: <GiStabbedNote />,
-    title: 'history',
-    text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+    icon: <AiOutlineHeart />,
+    title: 'IMPRESSION',
+    text: 'Whether you are looking for a more creative "Thank you" or a simple and sweet "I love you" - La Fleur delivers a box of flowers guaranteed to leave an everlasting impression!',
   },
-]
+];
 
-export const products_url = 'https://course-api.com/react-store-products'
+export const products_url = '/.netlify/functions/products';
 
-export const single_product_url = `https://course-api.com/react-store-single-product?id=`
+export const single_product_url = '/.netlify/functions/single-product?id=';

@@ -3,14 +3,14 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <Wrapper>
-      <h5>&copy; {new Date().getFullYear()}</h5>
-      <span> ComfySloth</span>
+      <h5>&copy; {new Date().getFullYear()}</h5> <span>La Fleur</span> 
       <h5>All rights reserved</h5>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.footer`
+  width: 100%;
   height: 5rem;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,8 @@ const Wrapper = styled.footer`
   background: var(--clr-black);
   text-align: center;
   span {
+    font-family: 'Melodrama';
+    font-weight: bold;
     color: var(--clr-primary-5);
   }
   h5 {

@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaShoppingCart, FaUserMinus, FaUserPlus } from 'react-icons/fa';
+import { BsPersonDash, BsPersonPlus } from 'react-icons/bs';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useProductsContext } from '../context/products_context';
@@ -8,14 +9,14 @@ import { useUserContext } from '../context/user_context';
 
 const CartButtons = () => {
   const { closeSidebar } = useProductsContext();
-  const {total_items,clearCart} = useCartContext()
-  const {loginWithRedirect,myUser,logout}=useUserContext()
+  const { total_items, clearCart } = useCartContext();
+  const { loginWithRedirect, myUser, logout } = useUserContext();
   return (
     <Wrapper className="cart-btn-wrapper">
       <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
         Cart
         <span className="cart-container">
-          <FaShoppingCart />
+          <AiOutlineShoppingCart />
           <span className="cart-value">{total_items}</span>
         </span>
       </Link>
@@ -24,11 +25,11 @@ const CartButtons = () => {
           type="button"
           className="auth-btn"
           onClick={() => {
-            clearCart()
-            logout({ returnTo: window.location.origin })}
-          } 
+            clearCart();
+            logout({ returnTo: window.location.origin });
+          }}
         >
-          Logout <FaUserMinus />
+          Logout <BsPersonDash />
         </button>
       ) : (
         <button
@@ -36,7 +37,7 @@ const CartButtons = () => {
           className="auth-btn"
           onClick={() => loginWithRedirect()}
         >
-          Login <FaUserPlus />
+          Login <BsPersonPlus />
         </button>
       )}
     </Wrapper>
@@ -51,7 +52,7 @@ const Wrapper = styled.div`
 
   .cart-btn {
     color: var(--clr-grey-1);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: var(--spacing);
     color: var(--clr-grey-1);
     display: flex;
@@ -87,7 +88,7 @@ const Wrapper = styled.div`
     align-items: center;
     background: transparent;
     border-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     cursor: pointer;
     color: var(--clr-grey-1);
     letter-spacing: var(--spacing);

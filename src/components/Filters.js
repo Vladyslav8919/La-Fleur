@@ -139,11 +139,19 @@ const Filters = () => {
           {/* shipping */}
           <div className="form-control shipping">
             <label htmlFor="shipping">free shipping</label>
-            <input type="checkbox" name='shipping' id='shipping' onChange={updateFilters} checked={shipping}/>
+            <input
+              type="checkbox"
+              name="shipping"
+              id="shipping"
+              onChange={updateFilters}
+              checked={shipping}
+            />
           </div>
           {/* end of shipping */}
         </form>
-        <button type='button' className='clear-btn' onClick={clearFilters}>clear filters</button>
+        <button type="button" className="clear-btn" onClick={clearFilters}>
+          clear filters
+        </button>
       </div>
     </Wrapper>
   );
@@ -236,7 +244,7 @@ const Wrapper = styled.section`
     max-width: 200px;
   }
   .clear-btn {
-    background: var(--clr-red-dark);
+    background: var(--clr-primary-5);
     color: var(--clr-white);
     padding: 0.25rem 0.5rem;
     border-radius: var(--radius);
